@@ -118,11 +118,6 @@ input::placeholder{
     color: #FFFFFF;
 }
 
-.features .heading{
-    border-bottom: 5px solid #4D0D73;
-    width: 15%;
-    margin: auto;
-}
 
 .ellipse2{
     height: 812px;
@@ -134,6 +129,8 @@ input::placeholder{
 .first-img{
     max-height: 812px;
     max-width: 375px;
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
 }
 
 .second-img{
@@ -346,6 +343,9 @@ footer{
 }
 
 @media(max-width: 640px){
+      body{
+        background-color: #ffffff;
+      }
       .sub-heading{
         max-width: 90%;
         font-size: 16px;
@@ -381,6 +381,8 @@ footer{
       .ellip-img{
         width: 220px;
         height: 220px;
+        position: relative;
+        top: -3rem;
       }
       .ellipse2 img{
         width: 134.85px;
@@ -393,30 +395,189 @@ footer{
       .shape2{
         width: 217.47px;
         height: 202.45px;
+        margin: auto;
+        position: relative;
+        top: -7rem;
       }
 
       .pentagon-parent2{
         left: 0;
       }
       img.ends {
-        width: 104px;
+        width: 86px;
         height: 225.19px;
       }
       img.zero {
-        width: 135px;
+        width: 115px;
         height: 292.32px;
     }
     .first{
       right: 0;
     }
-    .second{
+    .second {
       top: 2rem;
-      left: 4rem;
+      left: 5rem;
     }
+
     .ellipses{
       display: none;
     }
     .pentagon-parent{
       display: none;
     }
+    .center-anything-sm{
+      display: grid;
+      place-content: center;
+    }
+    p.check{
+      font-size: 18px;
+    }
+    /* Another great major hack  */
+    /* Made by Jimmy Gillam */
+/* Checkmark style starts */
+
+@-webkit-keyframes dothabottomcheck {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 15px;
+  }
+}
+
+@keyframes dothabottomcheck {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 15px;
+  }
+}
+
+@keyframes dothatopcheck {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 0;
+  }
+  100% {
+    height: 36px;
+  }
+}
+
+@-webkit-keyframes dothatopcheck {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 0;
+  }
+  100% {
+    height: 36px;
+  }
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.check-box {
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  border: 1px solid #4D0D73;
+  border-radius: 5px;
+  position: relative;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color ease 0.2s;
+  transition: border-color ease 0.2s;
+  cursor: pointer;
+}
+
+.check-box::before, .check-box::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  height: 0;
+  width: 1px;
+  background-color: #4D0D73;
+  display: inline-block;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  border-radius: 5px;
+  content: ' ';
+  -webkit-transition: opacity ease .5;
+  transition: opacity ease .5;
+}
+
+.check-box::before {
+  top: 21.6px;
+  left: 12.3px;
+  -webkit-box-shadow: 0 0 0 1.5px #ffffff;
+          box-shadow: 0 0 0 1.5px #ffffff;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.check-box::after {
+  top: 11.1px;
+  left: 1.5px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+input[type=checkbox]:checked + .check-box,
+.check-box.checked {
+  border-color: #4D0D73;
+}
+
+input[type=checkbox]:checked + .check-box::after,
+.check-box.checked::after {
+  height: 15px;
+  -webkit-animation: dothabottomcheck 0.2s ease 0s forwards;
+  animation: dothabottomcheck 0.2s ease 0s forwards;
+}
+
+input[type=checkbox]:checked + .check-box::before,
+.check-box.checked::before {
+  height: 36px;
+  -webkit-animation: dothatopcheck 0.4s ease 0s forwards;
+  animation: dothatopcheck 0.4s ease 0s forwards;
+}
+/*# sourceMappingURL=check.css.map */
+
+    /* Hack ends here */
+
+    .planer-sm{
+      flex-direction: column-reverse;
+    }
+    .planner p{
+      font-size: 16px;
+    }
+
+    .hack .col-sm-4{
+      position: relative;
+      width: 33.3%;
+      margin: auto;
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .my-sm-5{
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+    .testimonial h3 {
+      line-height: 1.2;
+      font-weight: 600;
+      font-size: 24px;
+      text-align: center;
+      color: #000000;
+  }
+  .testimonial img {
+    width: 80px;
+    height: 80px;
+  }
 }

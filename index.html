@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Party Planner</title>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="src/assets/styles/main.css">
 </head>
-<body>
+<body data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0">
     <main class="">
 
         
@@ -19,7 +20,7 @@
         </nav>
 
         <section class=" my-7 ">
-            <div class="text-center">
+            <div class="text-center" data-aos="fade-up">
                 <h3 class="heading"> Your Favourite App to plan <br> your Parties </h3>
                 <p class="sub-heading mt-3"> Party planner is an app that takes all your strain and plans your events or party on it’s own. </p>
 
@@ -36,35 +37,35 @@
         </section>
 
         <section class="my-7 container-fluid">
-            <div class="row">
-                <div class="col-md-4 col-lg-4 col-sm-4 ellipses">
+            <div class="row center-anything-sm">
+                <div class="col-md-4 col-lg-4 col-sm-4 ellipses" data-aos="fade-left">
                     <img  src="src/assets/images/Ellipse 4.png" alt="">
                     <img class="my-7" src="src/assets/images/Ellipse 4.png" alt="">
                 </div>
 
-                <div class="col-md-4 col-lg-4 col-sm-4">
+                <div class="col-md-4 col-lg-4 col-sm-4" data-aos="fade-up">
                     <div class="first"><img class="first-img" src="src/assets/images/X - 1.svg" alt=""></div>
                     <div class="second"><img class="second-img" src="src/assets/images/X - 12.svg" alt=""></div>
                 </div>
 
-                <div class="col-md-4 col-lg-4 col-sm-4 pentagon-parent">
+                <div class="col-md-4 col-lg-4 col-sm-4 pentagon-parent" data-aos="fade-right">
                     <div class="shape"></div>
                 </div>
             </div>
         </section>
-
         <section class="features my-7 ">
             <div class="text-center">
                 <h3 class="heading"> Features </h3>
+                <hr class="hr-style">
             </div>
 
-            <div class="row  my-10">
-                <div class="col-md-6">
+            <div class="row  my-10 ">
+                <div class="center-anything-sm col-md-6" data-aos="flip-up">
                     <div><img class="ellip-img" src="src/assets/images/Ellipse 8.png" alt=""></div>
-                    <div class="second ellipse2"><img src="src/assets/images/X - 12.svg" alt=""></div>
+                    <div class=" ellipse2"><img src="src/assets/images/X - 12.svg" alt=""></div>
                 </div>
 
-                <div class="col-md-6 center-anything">
+                <div class="col-md-6 center-anything" data-aos="fade-left">
                     <div class="row my-4">
                         <input type="checkbox" id="cbtest" checked readonly/>
                         <label for="cbtest" class="check-box"></label> 
@@ -104,8 +105,8 @@
                 <hr class="hr-style">
             </div>
 
-            <div class="row my-10 ">
-                <div class="col-md-6 center-anything my-auto">
+            <div class="row my-10 planer-sm">
+                <div class="col-md-6 center-anything my-auto" data-aos="fade-right">
                     <p>
                         Party Planner is an app that exclusivly does the work of planning your parties for you all
                          you have to do is sit back an enjoy your party the AI plans your party for you on call and 
@@ -113,9 +114,9 @@
                     </p>
                 </div>
 
-                <div class="col-md-6 pentagon-parent2">
+                <div class="col-md-6 pentagon-parent2" >
                     <div class="shape2"></div>
-                    <div class="plan-div">
+                    <div class="plan-div" data-aos="slide-up">
                         <img src="src/assets/images/X - 13 1.svg" alt="">
                     </div>
                 </div>
@@ -129,54 +130,45 @@
                 <p class="sub-heading mt-3"> Sneak Peek of our app</p>
             </div> 
 
-            <!-- I made a lot of wrong design decisions here -->
-            <div class="hack my-7">
-                <div class="hack1 row">
-                   
-                    <div class="col-md-4 align-self-end">
-                        <img class="ends" src="src/assets/images/X - 11.svg" alt="">
+            <div class="main-carousel my-5">
+                    <div class=" col-sm-4 carousel-cell  col-md-4 col-lg-4 align-self-end">
+                        <img class="ends" data-flickity-lazyload-src="src/assets/images/X - 11.svg" src="src/assets/images/X - 11.svg" alt="">
                     </div>
-
-                    <div class="col-md-4">
-                        <img class="zero" src="src/assets/images/X - 14.svg" alt="">
+            
+                    <div class="carousel-cell col-sm-4 col-md-4 col-lg-4">
+                        <img class="zero" data-flickity-lazyload-src="src/assets/images/X - 14.svg"  src="src/assets/images/X - 14.svg" alt="">
                     </div>
-
-                    <div class="col-md-4 align-self-end">
+            
+                    <div class="carousel-cell col-sm-4 col-md-4 col-lg-4 align-self-end">
                         <img class="ends" src="src/assets/images/X - 16.svg" alt="">
                     </div>
-                    
-
-                <!-- <div class=""> </div> -->
-                </div>
-                <div class="hack2 row my-10">
-                    <div class="col-md-4 align-self-end">
+                    <div class="carousel-cell col-sm-4 col-md-4 col-lg-4 align-self-end">
                         <img class="ends" src="src/assets/images/X - 17.svg" alt="">
                     </div>
-
-                    <div class="col-md-4">
+            
+                    <div class="carousel-cell col-sm-4 col-md-4 col-lg-4">
                         <img class="zero" src="src/assets/images/X - 15.svg" alt="">
                     </div>
-
-                    <div class="col-md-4 align-self-end">
+            
+                    <div class="carousel-cell col-sm-4 col-md-4 col-lg-4 align-self-end">
                         <img class="ends" src="src/assets/images/X - 15.svg" height="659.83" alt="">
                     </div>
                 </div>
-            </div>
-
-            <!-- Till here -->
+    
+           
         </section>
 
-        <section class="testimonial container-fluid my-7"> 
+        <section class="testimonial container-fluid my-7" data-aos="slide-left"> 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-12">
                     <h3> What our Beta Users say about Party Planner </h3>
                 </div>
 
-               <div class="col-md-6">
+               <div class="col-md-6 col-sm-12">
 
                    <ul class="row list-unstyled justify-content-between">
                        <div class="text-center">
-                            <li class="fir">
+                            <li class="fir active">
                             <a href=""> <img  src="src/assets/images/Ellipse 9.svg" alt=""></a>
                             </li>
                             <p class="party-item"> Diana</p>
@@ -205,7 +197,7 @@
             </div>
         </section>
 
-        <section class="container text-center my-5">
+        <section class="container text-center my-5" data-aos="fade-up">
             <div>
                 <h3 class="heading"> Get the App On Trial </h3>
                 <hr class="hr-style">
@@ -227,18 +219,18 @@
         <footer class="">
             <div class="container-fluid">
             <div class=" row">
-                <div class="col-md-4">
+                <div class="col-md-4 col--12">
                     <h4 style="font-size: 48px;"> Let's <br> Connect </h4>
                 </div>
 
-                <div class="col-md-4 d-flex align-self-center">
+                <div class="col-md-4 col-sm-12 d-flex align-self-center">
                     <ul class="list-unstyled">
                         <li> Terms of Service </li>
                         <li> Privacy Polixcy </li>
                     </ul>
                 </div>
 
-                <div class="col-md-4 d-flex align-self-center">
+                <div class="col-md-4 col-sm-12 d-flex align-self-center">
                     <img src="src/assets/images/Vector (1).svg"  alt="">
                     <p class="ml-3 mt-2"> Follow Us on Twitter </p>
                 </div>
@@ -246,8 +238,13 @@
             </div>
         </footer>
     </main>
-
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
     <script src="src/assets/js/main.js">
+
+      
+    </script>
+    <script>
       
     </script>
 </body>
