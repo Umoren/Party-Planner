@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background: #FAFAFF;
+   color: #212121;
+   overflow-x: hidden;
+   box-sizing: border-box;
+}
+
+nav.party-head{
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   
+}
+
+.party-head h3{
+    font-weight: bold;
+    font-size: 30px;
+
+    color: #212121;
+}
+
+.heading{
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.sub-heading{
+    font-size: 24px;
+    margin: auto;
+    max-width: 67%;
+    flex-basis: 50%;
+}
+
+.notify{
+    max-width: 62%;
+    flex-basis: 50%;
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+
+.notify h5{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.custom-form-control{
+    padding: 1.4rem;
+    background: #FFFFFF;
+    border: 1.4px solid #4D0D73;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+input::placeholder{
+    color: rgba(33, 33, 33, 0.64);
+    font-size: 18px;
+}
+
+.pentagon-parent{
+   
+    position: relative;
+    left: 4rem;
+    top: 10rem;
+}
+
+.shape{
+    clip-path: polygon(80% 0, 100% 0, 100% 100%, 0 100%, 0 46%);
+    background: rgba(205, 86, 143, 0.3);
+    height: 402px;
+    width: 293.7px;
+    margin-left: auto;
+}
+
+.second{
+    position: absolute;
+    top: 5rem;
+    left: 15rem;
+}
+
+.first{
+    position: relative;
+    right: 3rem;
+}
+
+.container-fluid{
+    width: 95%;
+}
+
+.ellipses{
+    margin: auto;
+}
+
+.my-7{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+
+.f-input{
+    width: 106%;
+}
+
+
+.btn-party{
+    background: #4D0D73;
+    border-radius: 10px;
+    border: none;
+    width: 125px;
+    position: relative;
+    left: -40px;
+    font-size: 18px;
+    user-select: none;
+    vertical-align: middle;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.features .heading{
+    border-bottom: 5px solid #4D0D73;
+    width: 15%;
+    margin: auto;
+}
+
+.ellipse2{
+    height: 812px;
+    position: absolute;
+    top: -5rem;
+    left: 8.5rem;
+}
+
+.first-img{
+    max-height: 812px;
+    max-width: 375px;
+}
+
+.second-img{
+    max-height: 599.8px;
+}
+
+.my-10{
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+}
+
+/* Made by Jimmy Gillam */
+/* Checkmark style starts */
+
+@-webkit-keyframes dothabottomcheck {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 25px;
+    }
+  }
+  
+  @keyframes dothabottomcheck {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 25px;
+    }
+  }
+  
+  @keyframes dothatopcheck {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 0;
+    }
+    100% {
+      height: 60px;
+    }
+  }
+  
+  @-webkit-keyframes dothatopcheck {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 0;
+    }
+    100% {
+      height: 60px;
+    }
+  }
+  
+  input[type=checkbox] {
+    display: none;
+  }
+  
+  .check-box {
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: 2px solid #4D0D73;
+    border-radius: 2px;
+
+    position: relative;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: border-color ease 0.2s;
+    transition: border-color ease 0.2s;
+    cursor: pointer;
+  }
+  
+  .check-box::before, .check-box::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    height: 0;
+    width: 2px;
+    background-color: #4D0D73;
+    
+    display: inline-block;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    border-radius: 5px;
+    content: ' ';
+    -webkit-transition: opacity ease .5;
+    transition: opacity ease .5;
+  }
+  
+  .check-box::before {
+    top: 36px;
+    left: 20.5px;
+    -webkit-box-shadow: 0 0 0 2.5px #ffffff;
+            box-shadow: 0 0 0 2.5px #ffffff;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    
+  }
+  
+  .check-box::after {
+    top: 18.5px;
+    left: 2.5px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  
+  input[type=checkbox]:checked + .check-box,
+  .check-box.checked {
+    border-color: #4D0D73;
+  }
+  
+  input[type=checkbox]:checked + .check-box::after,
+  .check-box.checked::after {
+    height: 25px;
+    -webkit-animation: dothabottomcheck 0.2s ease 0s forwards;
+    animation: dothabottomcheck 0.2s ease 0s forwards;
+
+  }
+  
+  input[type=checkbox]:checked + .check-box::before,
+  .check-box.checked::before {
+    height: 60px;
+    -webkit-animation: dothatopcheck 0.4s ease 0s forwards;
+    animation: dothatopcheck 0.4s ease 0s forwards;
+  }
+  
+  p.check{
+      font-size: 33px;
+  }
+
+  .center-anything{
+      display: grid;
+      place-content: center;
+  }
+  .hr-style{
+    border-bottom: 5px solid #4D0D73;
+    width: 15%;
+    margin: auto;
+  }
+
+  .shape2{
+    clip-path: polygon(42% 0, 100% 0, 100% 100%, 0 100%, 0 47%);
+    background: rgba(205, 86, 143, 0.3);
+    height: 566px;
+    margin-left: auto;
+}
+
+.plan-div{
+    position: absolute;
+    top: -10rem;
+    left: 7rem;
+}
+
+.planner p{
+    color: #000000;
+    font-size: 35px;
+}
+.pentagon-parent2{
+   
+    position: relative;
+    left: 4rem;
+    top: 0rem;
+}
+
+.testimonial h3{
+  line-height: 1.2;
+  font-weight: 600;
+  font-size: 48px;
+  color: #000000;
+}
+
+.active{
+  border: 2px solid #4D0D73;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.testimonial img{
+  width: 150px;
+  height: 150px;
+}
+
+.plan-testim{
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.party-item{
+  font-weight: normal;
+font-size: 28px;
+}
+
+.plan-testim  cite{
+  font-size: 14px;
+}
+
+.align{
+  margin-top: 1.5rem;
+}
+
+footer{
+  background-color: #4D0D73;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #ffffff;
+}
+
+@media(max-width: 640px){
+      .sub-heading{
+        max-width: 90%;
+        font-size: 16px;
+      }
+
+      .heading{
+        font-size: 28px;
+      }
+
+      .notify{
+        max-width: 90%;
+      }
+
+      .ellipses img{
+        width: 66px;
+        height: 66px;
+      }
+
+      .first-img{
+        width: 135px;
+        height: 292.32px;
+      }
+
+      .second-img{
+        width: 104px;
+        height: 225.19px;
+      }
+
+      .shape{
+        width: 77px;
+        height: 106px;
+      }
+      .ellip-img{
+        width: 220px;
+        height: 220px;
+      }
+      .ellipse2 img{
+        width: 134.85px;
+        height: 292px;
+      }
+      .plan-div img{
+        width: 134.92px;
+        height: 292.15px;
+      }
+      .shape2{
+        width: 217.47px;
+        height: 202.45px;
+      }
+
+      .pentagon-parent2{
+        left: 0;
+      }
+      img.ends {
+        width: 104px;
+        height: 225.19px;
+      }
+      img.zero {
+        width: 135px;
+        height: 292.32px;
+    }
+    .first{
+      right: 0;
+    }
+    .second{
+      top: 2rem;
+      left: 4rem;
+    }
+    .ellipses{
+      display: none;
+    }
+    .pentagon-parent{
+      display: none;
+    }
+}
