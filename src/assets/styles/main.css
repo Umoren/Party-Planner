@@ -118,6 +118,11 @@ input::placeholder{
     color: #FFFFFF;
 }
 
+.btn-party:hover{
+  color: #ffffff;
+  opacity: .9;
+}
+
 
 .ellipse2{
     height: 812px;
