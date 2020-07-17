@@ -1,10 +1,15 @@
 <?php 
 
-$connection = mysqli_connect('localhost', 'root', '');
+$server = 'us-cdbr-east-02.cleardb.com';
+$username = 'ba3726e28e3e61';
+$password = 'a2195117';
+$database = 'heroku_5c84e53cd025961';
+
+$connection = mysqli_connect($server, $username, $password);
 if (!$connection){
     die("Database Connection Failed" . mysqli_error($connection));
 }
-$select_db = mysqli_select_db($connection, 'party-planner');
+$select_db = mysqli_select_db($connection, $database);
 if (!$select_db){
     die("Database Selection Failed" . mysqli_error($connection));
 }
