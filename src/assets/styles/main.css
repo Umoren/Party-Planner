@@ -12,6 +12,16 @@ body{
    box-sizing: border-box;
 }
 
+.bg-modal-success{
+  background-color: #4D0D73;
+  color: #ffffff;
+}
+
+.bg-modal-info{
+  background: rgba(205, 86, 143, 0.3);
+  color: #ffffff;
+}
+
 nav.party-head{
    padding-top: 2rem;
    padding-bottom: 2rem;
