@@ -160,7 +160,7 @@
            
         </section>
 
-        <section class="testimonial container-fluid my-7" data-aos="slide-left"> 
+        <section class="testimonial container-fluid my-7" data-aos="fade-down"> 
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <h3> What our Beta Users say about Party Planner </h3>
@@ -184,7 +184,7 @@
 
                         <div class="text-center">
                             <li class="thir">
-                                <a href=""> <img src="https://res.cloudinary.com/samtech/image/upload/f_auto/q_auto/v1594915803/Ellipse_11_1.svg alt=""></a>
+                                <a href=""> <img src="https://res.cloudinary.com/samtech/image/upload/f_auto/q_auto/v1594915803/Ellipse_11_1.svg alt="></a>
                             </li>
                             <p class="party-item"> Lucy </p>
                         </div>
@@ -240,36 +240,74 @@
             </div>
         </footer>
     </main>
-    <div class="modal fade" id="myModal" role="dialog">
+    <!-- <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">
             <div class="card">
                 <div class="text-right cross"> <i class="fa fa-times"></i> </div>
-                <div class="card-body text-center"> <img class="vert-move"
-                        src="https://res.cloudinary.com/dafsch2zs/image/upload/v1594924885/iPhone_11_Pro_Max_2_rekyep_1_bnd8wy.png">
+                <div class="card-body text-center"> 
                     <h4>GREAT!</h4>
                     <p>We'd make sure you're notified as soon as we launch!</p> <button
                         class="btn btn-out btn-square continue">CONTINUE</button>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
+    <div class="modal fade" id="myModal"" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-info text-white">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <h4>GREAT!</h4>
+                <p>We'd make sure you're notified as soon as we launch!</p> 
+              
+            </div>
+            <div class="modal-footer">
+                <a href="/index.html"
+                    class="btn btn-out btn-square continue">CONTINUE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
 
-    <!-- MODAL ERROR-->
+    <!-- MODAL ERROR
     <div class="modal fade" id="errorModal" role="dialog">
         <div class="modal-dialog">
             <div class="card">
                 <div class="text-right cross"> <i class="fa fa-times"></i> </div>
-                <div class="card-body text-center"> <img class="vert-move"
-                        src="https://res.cloudinary.com/dafsch2zs/image/upload/v1594925044/iPhone_11_Pro_Max_so1j2u_1_2_sk9fyc.png">
-                    <h4>WE GOT YOUR MAIL ALREADY!</h4>
-                    <p>We know you're eager! <br> You'd be the first person to be notified !</p> <button
-                        class="btn btn-out btn-square continue">CONTINUE</button>
+                <div class="card-body text-center"> 
+                           < <button
+                        class="btn btn-party">CONTINUE</button>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
+    <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                h4>WE GOT YOUR MAIL ALREADY!</h4>
+                <p>We know you're eager! <br> You'd be the first person to be notified !</p>
+              
+            </div>
+            <div class="modal-footer">
+                <a href="/index.html"
+                    class="btn btn-out btn-square continue">CONTINUE</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"
     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>   
