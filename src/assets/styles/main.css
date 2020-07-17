@@ -634,4 +634,14 @@ input[type=checkbox]:checked + .check-box::before,
   .modal-content{
     width: 89% !important;
   }
+  footer .row{
+    display: grid;
+    place-content: center;
+    text-align: center;
+  }
+
+  .simp{
+    display: block !important;
+    text-align: center;
+  }
 }
