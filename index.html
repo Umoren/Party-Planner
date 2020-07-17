@@ -288,7 +288,7 @@
         </div>
     </div> -->
 
-    <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" >
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header bg-modal-info  text-white">
@@ -330,7 +330,7 @@
                 var email = $('#my-form-input-1').val();
                 $.ajax({
                     type: "POST",
-                    url: 'insert.php',
+                    url: 'connect.php',
                     data: {
                         email: email,
                         submit: 'submit'

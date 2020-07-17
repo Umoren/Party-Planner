@@ -27,9 +27,8 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `capture`
 --
-DROP TABLE IF EXISTS `emails`;
 
-CREATE TABLE `emails` (
+CREATE TABLE `capture` (
   `id` int(11) NOT NULL,
   `email` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -37,11 +36,38 @@ CREATE TABLE `emails` (
 --
 -- Dumping data for table `capture`
 --
+
+INSERT INTO `capture` (`id`, `email`) VALUES
+(1, 'superadmin@classtivities.com'),
+(2, 'newuser@gmail.com'),
+(3, 'samuelumoren365@gmail.com'),
+(4, 'samuelumoren365@gmail.com'),
+(5, 'samuelumoren365@gmail.com'),
+(6, 'superadmin@classtivities.com'),
+(7, 'superadmin@classtivities.com'),
+(8, 'samuelumoren365@gmail.com'),
+(9, 'trashemail@mial.com');
+
 --
 -- Indexes for dumped tables
 --
 
 --
+-- Indexes for table `capture`
+--
+ALTER TABLE `capture`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `capture`
+--
+ALTER TABLE `capture`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
