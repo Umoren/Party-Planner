@@ -383,6 +383,11 @@ footer{
         background-color: #ffffff;
         margin: 0 !important;
         padding: 0 !important;
+        position: relative;
+        left: 0 !important;
+        right: 0;
+        bottom: 0;
+        top: 0;
       }
       .sub-heading{
         max-width: 90%;
@@ -395,6 +400,7 @@ footer{
 
       .notify{
         max-width: 90%;
+        text-align: center !important;
       }
 
       .ellipses img{
@@ -455,6 +461,10 @@ footer{
     .second {
       top: 2rem;
       left: 5rem;
+    }
+
+    .f-input{
+      width: 116%;
     }
 
     .ellipses{
