@@ -34,21 +34,6 @@ CREATE TABLE `capture` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `capture`
---
-
-INSERT INTO `capture` (`id`, `email`) VALUES
-(1, 'superadmin@classtivities.com'),
-(2, 'newuser@gmail.com'),
-(3, 'samuelumoren365@gmail.com'),
-(4, 'samuelumoren365@gmail.com'),
-(5, 'samuelumoren365@gmail.com'),
-(6, 'superadmin@classtivities.com'),
-(7, 'superadmin@classtivities.com'),
-(8, 'samuelumoren365@gmail.com'),
-(9, 'trashemail@mial.com');
-
---
 -- Indexes for dumped tables
 --
 
