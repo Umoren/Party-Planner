@@ -354,6 +354,23 @@ font-size: 28px;
   margin-top: 1.5rem;
 }
 
+.preText{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  position: relative;
+  left: -2em;
+  font-weight: bolder;
+}
+
+
+input:invalid:focus{
+ border: 2px solid red;
+}
+
+input:valid{
+   border: 2px solid green;
+}
+
 footer{
   background-color: #4D0D73;
   padding-top: 3rem;

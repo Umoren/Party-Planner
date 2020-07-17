@@ -1,9 +1,44 @@
-  const firstListItem = document.querySelector('.fir');
+    const firstListItem = document.querySelector('.fir');
     const secondListItem = document.querySelector('.sec');
     const thirdListItem = document.querySelector('.thir');
     const plan1 = document.querySelector('#one');
     const plan2 = document.querySelector('#two');
     const plan3 = document.querySelector('#three');
+
+
+const emailVal = document.getElementById('my-form-input-1');
+
+const preText = document.querySelector(`.preText`);
+
+
+
+const validateIcon = document.querySelector(`.validateIcons`)
+
+
+
+//Add event keyup event listener to the email input
+
+emailVal.addEventListener("keyup", (e)=>{
+
+    //Use the JavaScript checkValidity() to check if the email format is correct
+
+    const isValidEmail = emailVal.checkValidity()
+
+    //give conditions for if email pattern is valid
+
+    if(isValidEmail){
+        // preText.textContent = "SUCCESS!"
+        preText.style.color = "green"
+       
+       
+
+    } else {
+        // preText.textContent = "Please provide a valid email!"
+        preText.style.color = "red"
+        
+    }
+
+})
     
     firstListItem.addEventListener('click', (e) => {
         e.preventDefault()
