@@ -395,7 +395,7 @@ footer{
       }
 
       .heading{
-        font-size: 28px;
+        font-size: 23px;
       }
 
       .notify{
@@ -406,6 +406,9 @@ footer{
       .ellipses img{
         width: 66px;
         height: 66px;
+      }
+      .party-item{
+        font-size: 16px;
       }
 
       .first-img{
@@ -643,5 +646,9 @@ input[type=checkbox]:checked + .check-box::before,
   .simp{
     display: block !important;
     text-align: center;
+  }
+
+  .align{
+    width: 98%;
   }
 }
